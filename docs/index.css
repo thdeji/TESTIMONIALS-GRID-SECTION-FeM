@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap'); */
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    background-color: hsl(0, 0%, 81%);
+    height: 200vh;
+    font-family: "Barlow Semi Condensed";
+    padding: 3rem 1.7rem 3rem 1.7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.75fr 1fr;
+    grid-row-gap: 2rem;
+  }
+  .testimony1 {
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 12.5rem;
+    background-color: hsl(263, 55%, 52%);
+  }
+  .testimony2 {
+    background-color: hsl(217, 19%, 35%);
+  }
+  .testimony3 {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .testimony4 {
+    background-color: hsl(219, 29%, 14%);
+  }
+  .testimony5 {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .testimony1,
+  .testimony2,
+  .testimony3,
+  .testimony4,
+  .testimony5 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 2.5rem 2rem 2rem;
+    /* padding BLOCK is top and bottom */
+    border-radius: 0.5rem;
+  }
+  .testimony1,
+  .testimony2,
+  .testimony4 {
+    color: white;
+  }
+  .testimony3,
+  .testimony5 {
+    color: hsl(219, 29%, 14%);
+  }
+  .h1 {
+    font-size: 10px;
+    width: 102%;
+  }
+  .img {
+    display: flex;
+    gap: 1rem;
+    justify-items: center;
+  }
+  img {
+    align-self: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+  }
+  .q {
+    font-size: 13px;
+    font-weight: 100;
+    opacity: 50%;
+    width: 98%;
+  }
+  .word {
+    height: 2rem;
+  }
+  #name {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 75%;
+  }
+  #title {
+    font-size: 12px;
+    opacity: 50%;
+  }
+}
+@media screen and (min-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    background-color: hsl(0, 0%, 81%);
+    padding: 15rem 5rem 15rem 5rem;
+    height: 100vh;
+    font-family: "Barlow Semi Condensed";
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr;
+    /* grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; */
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-areas:
+      "test1 test1 test2 test5"
+      "test3 test4 test4 test5";
+    gap: 2rem;
+  }
+  .testimony1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: test1;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 30rem;
+  }
+  .testimony2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: test2;
+  }
+  .testimony3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: test3;
+  }
+  .testimony4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: test4;
+  }
+  .testimony5 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: test5;
+  }
+  .testimony1,
+  .testimony2,
+  .testimony3,
+  .testimony4,
+  .testimony5 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 0.5rem;
+  }
+  .testimony1,
+  .testimony2,
+  .testimony4 {
+    color: white;
+  }
+  .testimony3,
+  .testimony5 {
+    color: hsl(219, 29%, 14%);
+  }
+  .testimony3,
+  .testimony5 > .h1 {
+    font-weight: 900;
+  }
+  .h1 {
+    font-size: 10px;
+    width: 84%;
+    margin-left: 1rem;
+  }
+  .img {
+    display: flex;
+    gap: 1rem;
+    justify-items: center;
+    margin-left: 1rem;
+  }
+  img {
+    align-self: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+  }
+  .q {
+    font-size: 13px;
+    font-weight: 100;
+    opacity: 50%;
+    width: 85%;
+    margin-left: 1rem;
+  }
+  .word {
+    height: 2rem;
+  }
+  #name {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 75%;
+  }
+  #title {
+    font-size: 12px;
+    opacity: 50%;
+  }
+}
