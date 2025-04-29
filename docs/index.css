@@ -16,7 +16,7 @@
     grid-row-gap: 2rem;
   }
   .testimony1 {
-    background-image: url(./docs/images/bg-pattern-quotation.svg);
+    background-image: url(../docs/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-x: 12.5rem;
     background-color: hsl(263, 55%, 52%);
@@ -110,7 +110,7 @@
   .testimony1 {
     background-color: hsl(263, 55%, 52%);
     grid-area: test1;
-    background-image: url(./docs/images/bg-pattern-quotation.svg);
+    background-image: url(../docs/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-x: 30rem;
   }
